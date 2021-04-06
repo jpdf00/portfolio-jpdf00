@@ -17,7 +17,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://jpdf00.github.io/portfolio-jpdf00/)
+[My Portfolio](https://jpdf00.github.io/portfolio-jpdf00/)
 
 
 ## Getting Started
