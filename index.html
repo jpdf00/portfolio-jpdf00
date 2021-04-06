@@ -1,15 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head - Contains link to css stylesheet, bootstrap, fonts used (Cocogoose and Lato) and for icons -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./features/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="./features/assets/imgs/logo-small.jpg" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="./features/css/style.css">
+  <link href="http://db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/0e87feccf7.js" crossorigin="anonymous"></script>
+  <title>J.PDF - Personal Portfolio</title>
 </head>
-<body>
+<!-- Body -->
 
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Nav bar -->
+    <div class="mobile-menu d-md-none d-flex">
+      <label for="toggle-open"><i class="fas fa-bars fs-1 text-white"></i></label>
+      <input class="d-none" type="radio" name="toggle" id="toggle-open">
+      <ul class="menu">
+        <li><a class="menu-links" href="#presentation">Presentation</a></li>
+        <li><a class="menu-links" href="#projects">Projects</a></li>
+        <li><a class="menu-links" href="#skills">Skills</a></li>
+        <li><a class="menu-links" href="#contact">Contact</a></li>
+      </ul>
+      <label class="menu-close" for="toggle-close"><i class="fas fa-times text-white"></i></label>
+      <input class="d-none" type="radio" name="toggle" id="toggle-close">
+    </div>
+    <nav class="nav-bar d-none d-md-flex flex-column position-fixed top-0 w-100">
+      <div class="nav-bar-bottom">
+        <div class="nav-bar-bottom container-md d-flex justify-content-between align-items-center">
+          <p class="m-0 text-white">J.PDF</p>
+          <ul class="d-flex justify-content-center m-0">
+            <li><a class="nav-bottom-links" href="#presentation">Presentation</a></li>
+            <li><a class="nav-bottom-links" href="#projects">Projects</a></li>
+            <li><a class="nav-bottom-links" href="#skills">Skills</a></li>
+            <li><a class="nav-bottom-links" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Section 01 - Presentation -->
+    <div class="header-info container-md" id="presentation">
+      <p class="header-greeting">Hello, I am</p>
+      <h1 class="header-title text-uppercase">João Paulo<br>Dias França</h1>
+      <p class="header-info-box">
+        - Freelance Full-stack Developer. <br>
+        - Current student at Microverse.  <br>
+        - Learning Ruby, Rails, JS, React & Redux. <br>
+        - Looking for new opportunities. <br>
+      </p>
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="https://docs.google.com/document/d/1km4XEUIVutgTOZe9-FKH-pEoujXZSfiqpKYJT-ns-4A/edit?usp=sharing" class="date-info text-decoration-none" target="blank">See my Resume <i class="fas fa-external-link-alt"></i></a>
+        <div class="d-flex align-items-center justify-content-around">
+          <a href="https://github.com/jpdf00" class="location-info text-decoration-none px-1" target="blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jpdf00/" class="location-info text-decoration-none px-1" target="blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/jpdf00" class="location-info text-decoration-none px-1" target="blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Section 02 - Projects -->
+    <section class="featured-speakers" id="projects">
+      <div class="d-flex flex-column align-items-center">
+        <h2 class="section-title mb-2">Portfolio</h2>
+        <p class="speakers-qualification">What follows is a small list of my recent works</p>
+        <!-- Section 02.2 - Project Tic-Tac-Toe -->
+        <div class="row w-100 my-1">
+          <div class="container-fluid d-flex">
+            <div class="bg-dark-gray w-25 me-1">
+
+            </div>
+            <div class="bg-dark-gray w-75 p-2 ms-1">
+              <h3 class="speakers-name">Tic-Tac-Toe</h3>
+              <p class="speakers-info text-start">A game of tic-tac-toe made in ruby to be played on your terminal.</p>
+              <a href="#" class="see-more-btn btn p-2 rounded" target="blank">See More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Section 02.3 - Project Web-Scrapper -->
+        <div class="row w-100 my-1">
+          <div class="container-fluid d-flex">
+            <div class="bg-dark-gray w-75 p-2 me-1">
+              <h3 class="speakers-name">Web-Scrapper</h3>
+              <p class="speakers-info text-start">A Web Scrapper made in ruby to be used on your terminal.</p>
+              <a href="#" class="see-more-btn btn p-2 rounded" target="blank">See More</a>
+            </div>
+            <div class="bg-dark-gray w-25 ms-1">
+
+            </div>
+          </div>
+        </div>
+        <!-- Section 02.4 - Financial-App -->
+        <div class="row w-100 my-1">
+          <div class="container-fluid d-flex">
+            <div class="bg-dark-gray w-25 me-1">
+
+            </div>
+            <div class="bg-dark-gray w-75 p-2 ms-1">
+              <h3 class="speakers-name">Financial App</h3>
+              <p class="speakers-info text-start">A app to control your expenses made with Ruby on Rails to be used from your browser.</p>
+              <a href="#" class="see-more-btn btn p-2 rounded" target="blank">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 03 - About me -->
+    <section class="" id="skills">
+      <div class="container-fluid text-center">
+        <h2 class="section-title text-white">Skills</h2>
+        <div class="w-100 d-flex">
+          <!-- Section about solar energy -->
+          <div class="main-program-item justify-content-between align-content-center d-flex flex-column m-1 col-6">
+            <i class="program-icon fas fa-hashtag my-auto p-2"></i>
+            <h3 class="program-title my-auto p-2">Languages</h3>
+            <p class="program-info m-0 p-3 text-start">
+              • JavaScript <br>
+              • Ruby <br>
+              • HTML <br>
+              • CSS  <br>
+            </p>
+          </div>
+          <!-- Section about wind energy -->
+          <div class="main-program-item justify-content-between align-content-center d-flex flex-column m-1 col-6">
+            <div class="main-program-cover position-absolute"></div>
+            <i class="program-icon fas fa-vector-square my-auto p-2"></i>
+            <h3 class="program-title my-auto p-2">Frameworks</h3>
+            <p class="program-info m-0 p-3 text-start">
+              • Bootstrap <br>
+              • Rails <br>
+              • React <br>
+              • Redux <br>
+            </p>
+          </div>
+        </div>
+        <div class="w-100 d-flex">
+          <!-- Section about Hydro energy -->
+          <div class="main-program-item justify-content-between align-content-center d-flex flex-column m-1 col-6">
+            <div class="main-program-cover position-absolute"></div>
+            <i class="program-icon fas fa-microchip my-auto p-2"></i>
+            <h3 class="program-title my-auto p-2">Tech Skills</h3>
+            <p class="program-info m-0 p-3 text-start">
+              • Codekit <br>
+              • Codepen <br>
+              • GitHub <br>
+              • Terminal <br>
+              • RSpec <br>
+              • Capybara <br>
+            </p>
+          </div>
+          <!-- Section about Bioenergy -->
+          <div class="main-program-item justify-content-between align-content-center d-flex flex-column m-1 col-6">
+            <div class="main-program-cover position-absolute"></div>
+            <i class="fab fa-slack program-icon my-auto p-2"></i>
+            <h3 class="program-title my-auto p-2">Soft Skills</h3>
+            <p class="program-info m-0 p-3 text-start">
+              • Communication <br>
+              • Problem-solving <br>
+              • Adaptability <br>
+              • Attentio to Detail <br>
+            </p>
+          </div>
+        </div>
+        <!-- links -->
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="container-fluid py-1">
+    <!-- Section 04 - Social Media -->
+    <section class="container-fluid py-1" id="contact">
+      <div class="container-md d-flex flex-column align-items-center">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="" class="container-fluid mt-0 pt-1">
+          <input type="name" name="name" value="" placeholder="Your name" class="form-input w-100 my-2 rounded text-white">
+          <input type="email" name="email" value="" placeholder="Your email" class="form-input w-100 my-2 rounded text-white">
+          <textarea name="message" rows="8" placeholder="Your message here..." class="form-input w-100 my-2 rounded text-white"></textarea>
+        </form>
+      </div>
+      <div class="d-flex align-items-center justify-content-between ms-2">
+        <a href="https://docs.google.com/document/d/1km4XEUIVutgTOZe9-FKH-pEoujXZSfiqpKYJT-ns-4A/edit?usp=sharing" class="date-info text-decoration-none" target="blank">See my Resume <i class="fas fa-external-link-alt"></i></a>
+        <div class="d-flex align-items-center justify-content-around">
+          <a href="https://github.com/jpdf00" class="location-info text-decoration-none px-1" target="blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jpdf00/" class="location-info text-decoration-none px-1" target="blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/jpdf00" class="location-info text-decoration-none px-1" target="blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- bootstrap script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
+
 </html>
